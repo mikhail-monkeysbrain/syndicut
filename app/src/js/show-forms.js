@@ -9,9 +9,23 @@ $(function () {
 	});
 
 	$('#jsSignOpen').click(function(){
-		$('.form-registration').show(500)
+		$('.form-signin').show(500)
 	});
 	$('#jsSignClose').click(function(){
+		$('.form-signin').hide(500)
+	});
+	
+	$('#jsSignOpen').click(function(){
+		$('.form-signin').show(500)
+	});
+	$('#jsSignClose').click(function(){
+		$('.form-signin').hide(500)
+	});
+	
+	$('#jsRegistrationOpen').click(function(){
+		$('.form-registration').show(500)
+	});
+	$('#jsRegistrationClose').click(function(){
 		$('.form-registration').hide(500)
 	});
 });

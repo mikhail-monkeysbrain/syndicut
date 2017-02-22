@@ -1,0 +1,16 @@
+.form.form-registration
+  .form-registration__left
+    input(type="text" name="name" placeholder="ваше имя")
+    input(type="text" name="who_are_you" placeholder="кто вы ?")
+    br
+    input#Barber(type="radio" name="who_are_you" value="Новость")
+    label(for="Barber") Парикмахер-стиллист
+    br
+    input#owner(type="radio" name="who_are_you" value="Вакансию")
+    label(for="owner") Владелец салона красоты
+    input(type="text" name="number" placeholder="1+5+9=?")
+  .form-registration__right
+    input(type="text" name="email" placeholder="e-mail")
+    input(type="password" name="password" placeholder="пароль")
+    input(type="password" name="password" placeholder="пароль еще раз")
+    button#jsRegistrationClose.btn.btn__sign зарегистрироваться

@@ -26,6 +26,33 @@
   font-weight: normal;
   font-style: normal;
 }
+.__float-left {
+  float: left;
+}
+.__float-right {
+  float: right;
+}
+.__ta-center {
+  text-align: center;
+}
+.__ta-left {
+  text-align: left;
+}
+.__ta-rright {
+  text-align: right;
+}
+.__ta-justify {
+  text-align: justify;
+}
+.__semi {
+  width: 50%;
+}
+.__full {
+  width: 100%;
+}
+.clear {
+  clear: both;
+}
 html {
   font-size: 1vw;
 }
@@ -43,6 +70,9 @@ header {
 a {
   text-decoration: none;
   color: inherit;
+}
+p {
+  line-height: 1;
 }
 img {
   width: 100%;
@@ -67,7 +97,7 @@ img {
   padding-left: 0;
   padding-right: 0;
   background: rgba(0,0,0,0.9);
-  padding: 2rem 0;
+  padding: 3rem 0;
 }
 .header-main::after {
   content: '';
@@ -207,26 +237,58 @@ img {
   line-height: 1.3;
   margin: 1rem 0;
 }
-.header .form {
-  display: none;
-  background: #202020;
+.slider-top-item {
+  position: relative;
+}
+.slider-top-item__overlay {
+  -ms-filter: grayscale(25%) brightness(25%);
+  -o-filter: grayscale(25%) brightness(25%);
+  -moz-filter: grayscale(25%) brightness(25%);
+  filter: grayscale(25%) brightness(25%);
+}
+.slider-top-item__info {
   position: absolute;
-  padding: 1rem 1.5rem;
+  color: #fff;
+  left: 0;
+  top: 13rem;
+  right: 0;
+  bottom: 0;
+  letter-spacing: normal;
+  font-size: 1.5rem;
+  width: 80%;
+  margin: 0 auto;
 }
-.header .form-add {
-  width: 13.55rem;
-  left: 3rem;
-  top: 4.5rem;
+.slider__head {
+  font-family: RexBold;
+  font-size: 3.3rem;
 }
-.header .form-registration {
-  width: 21.2rem;
-  left: inherit;
-  top: 4.5rem;
-  right: 3rem;
+.owl-theme .owl-nav.disabled +.owl-dots {
+  position: relative;
+  margin-top: -4rem;
+  width: auto;
+  max-width: 100%;
+  float: none;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 0;
+  padding-right: 0;
 }
-.header .form-registration .btn {
-  margin-top: 1rem;
-  margin-bottom: 1.5rem;
+.owl-theme .owl-nav.disabled +.owl-dots::after {
+  content: '';
+  display: table;
+  clear: both;
+}
+.owl-theme .owl-nav.disabled +.owl-dots .owl-dot.active span {
+  background: transparent url("../img/icons/radio-checked.png");
+  background-size: cover;
+}
+.owl-theme .owl-nav.disabled +.owl-dots .owl-dot span {
+  width: 1rem;
+  height: 1rem;
+  background: transparent url("../img/icons/radio-slide.png");
+  background-size: cover;
+  border-radius: 50%;
 }
 button {
   border: 0;
@@ -334,9 +396,8 @@ button {
 label {
   cursor: pointer;
   position: relative;
-  padding-left: 25px;
-  margin-right: 15px;
-  font-size: 13px;
+  padding-left: 2rem;
+  font-size: 1.3rem;
   font-family: FavoritLightC;
   color: #b2b2b2;
   font-size: 1.3rem;
@@ -347,12 +408,12 @@ label {
 label:before {
   content: "";
   display: inline-block;
-  width: 1.2rem;
-  height: 1.2rem;
-  margin-right: 10px;
+  width: 1rem;
+  height: 1rem;
+  margin-right: 0.5rem;
   position: absolute;
   left: 0;
-  bottom: 1px;
+  bottom: 0.2rem;
   background: url("../img/icons/radio.png") center no-repeat;
   background-size: cover;
 }
@@ -361,9 +422,9 @@ input[type=radio] {
 }
 input[type=radio]:checked + label:before {
   content: "";
-  font-size: 30px;
+  font-size: 1rem;
   text-align: center;
-  line-height: 18px;
+  line-height: 0.5rem;
   background: url("../img/icons/radio-checked.png") center no-repeat;
   background-size: cover;
 }
@@ -381,5 +442,50 @@ input[type=password] {
   letter-spacing: 0.5rem;
   text-transform: uppercase;
   padding: 0.5rem 0 0.3rem;
-  margin-bottom: 1.3rem;
+  margin-bottom: 0.9rem;
+  margin-top: 0.9rem;
+}
+.form {
+  display: none;
+  background: #202020;
+  position: absolute;
+  padding: 1rem 1.5rem;
+  z-index: 101;
+}
+.form-add {
+  width: 13.55rem;
+  left: 3rem;
+  top: 4.5rem;
+}
+.form-signin {
+  width: 21.2rem;
+  left: inherit;
+  top: 4.5rem;
+  right: 3rem;
+}
+.form-signin .btn {
+  margin-top: 1rem;
+  margin-bottom: 1.5rem;
+}
+.form-registration {
+  position: fixed;
+  width: 48%;
+  left: 25%;
+  top: 17rem;
+}
+.form-registration .btn {
+  margin-left: -2.5rem;
+  margin-top: 2.5rem;
+}
+.form-registration input[name=number] {
+  width: 90%;
+}
+.form-registration__left,
+.form-registration__right {
+  width: 49%;
+  float: left;
+  padding: 0.5rem 2rem;
+}
+.form-registration__right {
+  float: right;
 }

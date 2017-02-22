@@ -22,32 +22,19 @@ header.header
     .header-main-col
       .sign
         a(href="#")#jsSignOpen.sign-rel вход
-        button.btn.btn__sign.sign-btn регистрация
+        button#jsRegistrationOpen.btn.btn__sign.sign-btn регистрация
       a(href="#tel").phone 8.800.775.21.51
-      .form.form-registration
+      .form.form-signin
         input(type="text" name="email" placeholder="e-mail")
         input(type="password" name="password" placeholder="пароль")
-        input#memo(type="radio" name="registration" value="Вакансию")
+        input#memo(type="radio" name="signin" value="Вакансию")
         label(for="memo") Запомнить меня
         button#jsSignClose.btn.btn__sign войти
         br
-        input#signsocial(type="radio" name="registration" value="Вакансию")
+        input#signsocial(type="radio" name="signin" value="Вакансию")
         label(for="signsocial") Войти с помощью
         .social
           a(href="#").social-icon.social-icon__facebook__colored
           a(href="#").social-icon.social-icon__vk__colored
-  ul.header-nav
-    li.header-nav-item
-      a(href="#") О проекте
-    li.header-nav-item
-      a(href="#") Академия
-    li.header-nav-item
-      a(href="#") Конкурсы
-    li.header-nav-item
-      a(href="#") Партнеры
-    li.header-nav-item
-      a(href="#") Сувениры
-    li.header-nav-item
-      a(href="#") Новости
-    li.header-nav-item
-      a(href="#") Контакты 
+  include -nav
+  include form-registration

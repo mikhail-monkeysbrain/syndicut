@@ -1,0 +1,27 @@
+.__float-left {
+  float: left;
+}
+.__float-right {
+  float: right;
+}
+.__ta-center {
+  text-align: center;
+}
+.__ta-left {
+  text-align: left;
+}
+.__ta-rright {
+  text-align: right;
+}
+.__ta-justify {
+  text-align: justify;
+}
+.__semi {
+  width: 50%;
+}
+.__full {
+  width: 100%;
+}
+.clear {
+  clear: both;
+}

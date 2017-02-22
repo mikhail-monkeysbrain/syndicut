@@ -1,0 +1,42 @@
+.slider
+  &-top
+    &-item
+      position relative
+      &__overlay
+        -ms-filter: grayscale(25%) brightness(25%)
+        -o-filter: grayscale(25%) brightness(25%)
+        -moz-filter: grayscale(25%) brightness(25%)
+        -webkit-filter: grayscale(25%) brightness(25%)
+        filter: grayscale(25%) brightness(25%)
+      &__info
+        position absolute
+        color #fff
+        left 0
+        top 13rem
+        right 0
+        bottom 0
+        letter-spacing normal
+        font-size 1.5rem
+        width 80%
+        margin 0 auto
+  &__head
+    font-family rb
+    font-size 3.3rem
+.owl-theme
+   .owl-nav
+     &.disabled
+       +.owl-dots
+          position relative
+          margin-top -4rem
+          center(100%)
+          .owl-dot
+            &.active
+              span
+                background: transparent url('../img/icons/radio-checked.png') 
+                background-size cover 
+            span
+              width: 1rem 
+              height: 1rem 
+              background: transparent url('../img/icons/radio-slide.png') 
+              background-size cover 
+              border-radius: 50%

@@ -26,15 +26,15 @@
     <div class="header-main-logo"><a href="index.html"><img src="img/logo.png" alt="logo" class="logo"></a></div>
     <div class="header-main-col">
       <div class="sign"><a href="#" id="jsSignOpen" class="sign-rel">вход</a>
-        <button class="btn btn__sign sign-btn">регистрация</button>
+        <button id="jsRegistrationOpen" class="btn btn__sign sign-btn">регистрация</button>
       </div><a href="#tel" class="phone">8.800.775.21.51</a>
-      <div class="form form-registration">
+      <div class="form form-signin">
         <input type="text" name="email" placeholder="e-mail">
         <input type="password" name="password" placeholder="пароль">
-        <input id="memo" type="radio" name="registration" value="Вакансию">
+        <input id="memo" type="radio" name="signin" value="Вакансию">
         <label for="memo">Запомнить меня</label>
         <button id="jsSignClose" class="btn btn__sign">войти</button><br>
-        <input id="signsocial" type="radio" name="registration" value="Вакансию">
+        <input id="signsocial" type="radio" name="signin" value="Вакансию">
         <label for="signsocial">Войти с помощью</label>
         <div class="social"><a href="#" class="social-icon social-icon__facebook__colored"></a><a href="#" class="social-icon social-icon__vk__colored"></a></div>
       </div>
@@ -49,6 +49,37 @@
     <li class="header-nav-item"><a href="#">Новости</a></li>
     <li class="header-nav-item"><a href="#">Контакты </a></li>
   </ul>
+  <div class="form form-registration">
+    <div class="form-registration__left">
+      <input type="text" name="name" placeholder="ваше имя">
+      <input type="text" name="who_are_you" placeholder="кто вы ?"><br>
+      <input id="Barber" type="radio" name="who_are_you" value="Новость">
+      <label for="Barber">Парикмахер-стиллист</label><br>
+      <input id="owner" type="radio" name="who_are_you" value="Вакансию">
+      <label for="owner">Владелец салона красоты</label>
+      <input type="text" name="number" placeholder="1+5+9=?">
+    </div>
+    <div class="form-registration__right">
+      <input type="text" name="email" placeholder="e-mail">
+      <input type="password" name="password" placeholder="пароль">
+      <input type="password" name="password" placeholder="пароль еще раз">
+      <button id="jsRegistrationClose" class="btn btn__sign">зарегистрироваться</button>
+    </div>
+  </div>
 </header>
+<div class="slider-top owl-carousel owl-theme">
+  <div class="slider-top-item"><a href="#"><img src="img/slider-top.jpg" alt="" class="slider-top-item__overlay">
+      <div class="slider-top-item__info"><span class="slider__head">Раздел: </span>&nbsp; Заголовок какой-то новости/события или акции
+        <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo cumque eos omnis dolorum adipisci autem, voluptatum, reprehenderit saepe. A, ipsa.</p>
+      </div></a></div>
+  <div class="slider-top-item"><a href="#"><img src="img/slider-top.jpg" alt="" class="slider-top-item__overlay">
+      <div class="slider-top-item__info"><span class="slider__head">Раздел: </span>&nbsp; Заголовок какой-то новости/события или акции
+        <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo cumque eos omnis dolorum adipisci autem, voluptatum, reprehenderit saepe. A, ipsa.</p>
+      </div></a></div>
+  <div class="slider-top-item"><a href="#"><img src="img/slider-top.jpg" alt="" class="slider-top-item__overlay">
+      <div class="slider-top-item__info"><span class="slider__head">Раздел: </span>&nbsp; Заголовок какой-то новости/события или акции
+        <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo cumque eos omnis dolorum adipisci autem, voluptatum, reprehenderit saepe. A, ipsa.</p>
+      </div></a></div>
+</div>
 <script src="vendors/vendors.js"></script>
 <script src="js/main.js"></script>
