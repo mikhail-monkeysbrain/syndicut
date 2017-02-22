@@ -1,0 +1,48 @@
+button
+  border 0
+  outline 0
+&.btn
+  font-family FavoritLightCondC
+  padding 0 .75rem
+  background #e30613
+  line-height 1.8
+  text-transform uppercase
+  color #fff
+  font-size 1.3rem
+  letter-spacing 0.58rem
+  position relative
+  margin-left 3.3rem
+  cursor pointer
+  transition all 0.5s ease
+  &__add //TODO refactor this with svg 
+    &::before
+      content ''
+      position absolute
+      left -3.3rem
+      top 0
+      display block
+      background: url('../img/icons/add.png')
+      background-size cover
+      size (2.3rem 2.3rem)
+      transition animation
+  &:hover
+    background rgb(75, 75, 75)
+    &::before
+      background: url('../img/icons/add-hover.png')
+      background-size cover
+  &__sign //TODO refactor this with svg too
+    &::before
+      content ''
+      position absolute
+      left -3.3rem
+      top 0
+      display block
+      background: url('../img/icons/sign.png')
+      background-size cover
+      size (2.3rem 2.3rem)
+      transition animation
+  &:hover
+    background rgb(75, 75, 75)
+    &::before
+      background: url('../img/icons/sign-hover.png')
+      background-size cover

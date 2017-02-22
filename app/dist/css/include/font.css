@@ -1,0 +1,28 @@
+@font-face {
+  font-family: 'FavoritLightC';
+  src: url("../fonts/FavoritLightC.eot");
+  src: url("../fonts/FavoritLightC.woff2") format('woff2'), url("../fonts/FavoritLightC.woff") format('woff'), url("../fonts/FavoritLightC.ttf") format('truetype'), url("../fonts/FavoritLightC.svg#FavoritLightC") format('svg'), url("../fonts/FavoritLightC.eot?#iefix") format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'FavoritLightCondC';
+  src: url("../fonts/FavoritLightCondC.eot");
+  src: url("../fonts/FavoritLightCondC.woff2") format('woff2'), url("../fonts/FavoritLightCondC.woff") format('woff'), url("../fonts/FavoritLightCondC.ttf") format('truetype'), url("../fonts/FavoritLightCondC.svg#FavoritLightCondC") format('svg'), url("../fonts/FavoritLightCondC.eot?#iefix") format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'RexBold';
+  src: url("../fonts/RexBold.eot");
+  src: url("../fonts/RexBold.woff2") format('woff2'), url("../fonts/RexBold.woff") format('woff'), url("../fonts/RexBold.ttf") format('truetype'), url("../fonts/RexBold.svg#RexBold") format('svg'), url("../fonts/RexBold.eot?#iefix") format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'RexLight';
+  src: url("../fonts/RexLight.eot");
+  src: url("../fonts/RexLight.woff2") format('woff2'), url("../fonts/RexLight.woff") format('woff'), url("../fonts/RexLight.ttf") format('truetype'), url("../fonts/RexLight.svg#RexLight") format('svg'), url("../fonts/RexLight.eot?#iefix") format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}

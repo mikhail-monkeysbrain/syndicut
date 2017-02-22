@@ -1,0 +1,385 @@
+@font-face {
+  font-family: 'FavoritLightC';
+  src: url("../fonts/FavoritLightC.eot");
+  src: url("../fonts/FavoritLightC.woff2") format('woff2'), url("../fonts/FavoritLightC.woff") format('woff'), url("../fonts/FavoritLightC.ttf") format('truetype'), url("../fonts/FavoritLightC.svg#FavoritLightC") format('svg'), url("../fonts/FavoritLightC.eot?#iefix") format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'FavoritLightCondC';
+  src: url("../fonts/FavoritLightCondC.eot");
+  src: url("../fonts/FavoritLightCondC.woff2") format('woff2'), url("../fonts/FavoritLightCondC.woff") format('woff'), url("../fonts/FavoritLightCondC.ttf") format('truetype'), url("../fonts/FavoritLightCondC.svg#FavoritLightCondC") format('svg'), url("../fonts/FavoritLightCondC.eot?#iefix") format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'RexBold';
+  src: url("../fonts/RexBold.eot");
+  src: url("../fonts/RexBold.woff2") format('woff2'), url("../fonts/RexBold.woff") format('woff'), url("../fonts/RexBold.ttf") format('truetype'), url("../fonts/RexBold.svg#RexBold") format('svg'), url("../fonts/RexBold.eot?#iefix") format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'RexLight';
+  src: url("../fonts/RexLight.eot");
+  src: url("../fonts/RexLight.woff2") format('woff2'), url("../fonts/RexLight.woff") format('woff'), url("../fonts/RexLight.ttf") format('truetype'), url("../fonts/RexLight.svg#RexLight") format('svg'), url("../fonts/RexLight.eot?#iefix") format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+html {
+  font-size: 1vw;
+}
+body {
+  font-family: FavoritLightC;
+  background: #000;
+  font-size: 1.3rem;
+  letter-spacing: 0.5rem;
+  line-height: 2.22;
+}
+header {
+  background: url("../img/cover-top.jpg") center no-repeat;
+  background-size: cover;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+img {
+  width: 100%;
+}
+.header {
+  text-transform: uppercase;
+}
+.header-top,
+.header-nav-item {
+  background: #202020;
+  color: #fff;
+  text-align: center;
+  font-family: FavoritLightCondC;
+}
+.header-main {
+  width: auto;
+  max-width: 100%;
+  float: none;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 0;
+  padding-right: 0;
+  background: rgba(0,0,0,0.9);
+  padding: 2rem 0;
+}
+.header-main::after {
+  content: '';
+  display: table;
+  clear: both;
+}
+.header-main-col {
+  float: left;
+  clear: none;
+  text-align: inherit;
+  width: 30%;
+  margin-left: 0%;
+  margin-right: 0%;
+  position: relative;
+  padding: 0.7rem 3rem;
+}
+.header-main-col::after {
+  content: '';
+  display: table;
+  clear: both;
+}
+.header-main-col:nth-child(n) {
+  margin-right: 0%;
+  float: left;
+  clear: none;
+}
+.header-main-col:nth-child(3n) {
+  margin-right: 0%;
+  float: right;
+}
+.header-main-col:nth-child(3n + 1) {
+  clear: both;
+}
+.header-main-logo {
+  float: left;
+  clear: none;
+  text-align: inherit;
+  width: 40%;
+  margin-left: 0%;
+  margin-right: 0%;
+  padding: 1rem 0.5rem;
+}
+.header-main-logo::after {
+  content: '';
+  display: table;
+  clear: both;
+}
+.header-main-logo:nth-child(n) {
+  margin-right: 0%;
+  float: left;
+  clear: none;
+}
+.header-main-logo:nth-child(3n) {
+  margin-right: 0%;
+  float: right;
+}
+.header-main-logo:nth-child(3n + 1) {
+  clear: both;
+}
+.header-nav {
+  width: auto;
+  max-width: 100%;
+  float: none;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 0;
+  padding-right: 0;
+  background: #202020;
+}
+.header-nav::after {
+  content: '';
+  display: table;
+  clear: both;
+}
+.header-nav-item {
+  float: left;
+  clear: none;
+  text-align: inherit;
+  width: 14.285714285714285%;
+  margin-left: 0%;
+  margin-right: 0%;
+  text-align: center;
+  color: #494949;
+  transition: all 0.5s ease;
+}
+.header-nav-item::after {
+  content: '';
+  display: table;
+  clear: both;
+}
+.header-nav-item:nth-child(n) {
+  margin-right: 0%;
+  float: left;
+  clear: none;
+}
+.header-nav-item:nth-child(7n) {
+  margin-right: 0%;
+  float: right;
+}
+.header-nav-item:nth-child(7n + 1) {
+  clear: both;
+}
+.header-nav-item:hover {
+  color: #e9e9e9;
+}
+.header .social {
+  margin-top: 1rem;
+}
+.header .social-icon {
+  float: left;
+}
+.header .social-icon:nth-child(2) {
+  margin: 0 1rem;
+}
+.header .sign {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-top: 0.3rem;
+}
+.header .sign-rel {
+  font-family: FavoritLightCondC;
+  color: #b2b2b2;
+  border-bottom: 1px solid;
+  line-height: 1.5;
+  transition: all 0.5s ease;
+  margin-right: 0.5rem;
+}
+.header .sign-rel:hover {
+  color: #e9e9e9;
+}
+.header .phone {
+  font-family: FavoritLightCondC;
+  color: #fff;
+  float: right;
+  line-height: 1.3;
+  margin: 1rem 0;
+}
+.header .form {
+  display: none;
+  background: #202020;
+  position: absolute;
+  padding: 1rem 1.5rem;
+}
+.header .form-add {
+  width: 13.55rem;
+  left: 3rem;
+  top: 4.5rem;
+}
+.header .form-registration {
+  width: 21.2rem;
+  left: inherit;
+  top: 4.5rem;
+  right: 3rem;
+}
+.header .form-registration .btn {
+  margin-top: 1rem;
+  margin-bottom: 1.5rem;
+}
+button {
+  border: 0;
+  outline: 0;
+}
+.btn {
+  font-family: FavoritLightCondC;
+  padding: 0 0.75rem;
+  background: #e30613;
+  line-height: 1.8;
+  text-transform: uppercase;
+  color: #fff;
+  font-size: 1.3rem;
+  letter-spacing: 0.58rem;
+  position: relative;
+  margin-left: 3.3rem;
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+.btn__add::before {
+  content: '';
+  position: absolute;
+  left: -3.3rem;
+  top: 0;
+  display: block;
+  background: url("../img/icons/add.png");
+  background-size: cover;
+  width: 2.3rem;
+  height: 2.3rem;
+  transition: all 0.5s ease;
+}
+.btn:hover {
+  background: #4b4b4b;
+}
+.btn:hover::before {
+  background: url("../img/icons/add-hover.png");
+  background-size: cover;
+}
+.btn__sign::before {
+  content: '';
+  position: absolute;
+  left: -3.3rem;
+  top: 0;
+  display: block;
+  background: url("../img/icons/sign.png");
+  background-size: cover;
+  width: 2.3rem;
+  height: 2.3rem;
+  transition: all 0.5s ease;
+}
+.btn:hover {
+  background: #4b4b4b;
+}
+.btn:hover::before {
+  background: url("../img/icons/sign-hover.png");
+  background-size: cover;
+}
+.social-icon {
+  width: 2.3rem;
+  height: 2.3rem;
+  transition: all 0.5s ease;
+}
+.social-icon__instagramm {
+  background: url("../img/icons/instagram.png");
+  background-size: cover;
+}
+.social-icon__instagramm:hover {
+  background: url("../img/icons/instagram-hover.png");
+  background-size: cover;
+}
+.social-icon__facebook {
+  background: url("../img/icons/facebook.png");
+  background-size: cover;
+}
+.social-icon__facebook:hover {
+  background: url("../img/icons/facebook-hover.png");
+  background-size: cover;
+}
+.social-icon__facebook__colored {
+  border-radius: 5px;
+  background: url("../img/icons/facebook-reg.png");
+  background-size: cover;
+}
+.social-icon__facebook__colored:hover {
+  background: url("../img/icons/facebook.png");
+  background-size: cover;
+}
+.social-icon__vk {
+  background: url("../img/icons/vk.png");
+  background-size: cover;
+}
+.social-icon__vk:hover {
+  background: url("../img/icons/vk-hover.png");
+  background-size: cover;
+}
+.social-icon__vk__colored {
+  border-radius: 5px;
+  background: url("../img/icons/vk-reg.png");
+  background-size: cover;
+}
+.social-icon__vk__colored:hover {
+  background: url("../img/icons/vk.png");
+  background-size: cover;
+}
+label {
+  cursor: pointer;
+  position: relative;
+  padding-left: 25px;
+  margin-right: 15px;
+  font-size: 13px;
+  font-family: FavoritLightC;
+  color: #b2b2b2;
+  font-size: 1.3rem;
+  text-transform: none;
+  letter-spacing: normal;
+  margin-bottom: 1.3rem;
+}
+label:before {
+  content: "";
+  display: inline-block;
+  width: 1.2rem;
+  height: 1.2rem;
+  margin-right: 10px;
+  position: absolute;
+  left: 0;
+  bottom: 1px;
+  background: url("../img/icons/radio.png") center no-repeat;
+  background-size: cover;
+}
+input[type=radio] {
+  display: none;
+}
+input[type=radio]:checked + label:before {
+  content: "";
+  font-size: 30px;
+  text-align: center;
+  line-height: 18px;
+  background: url("../img/icons/radio-checked.png") center no-repeat;
+  background-size: cover;
+}
+input[type=text],
+input[type=phone],
+input[type=password] {
+  background: transparent;
+  outline: none;
+  border: 0;
+  border-bottom: 1px solid;
+  color: #b2b2b2;
+  width: 100%;
+  font-family: FavoritLightCondC;
+  font-size: 1.3rem;
+  letter-spacing: 0.5rem;
+  text-transform: uppercase;
+  padding: 0.5rem 0 0.3rem;
+  margin-bottom: 1.3rem;
+}

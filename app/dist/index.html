@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+  <title>syndicut</title>
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/vendors/vendors.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+</body>
+<header class="header">
+  <div class="header-top">международная &nbsp; ассоциация  профессионалов &nbsp;сферы &nbsp;красоты</div>
+  <div class="header-main">
+    <div class="header-main-col"> 
+      <button id="jsAddOpen" class="btn btn__add">добавить</button>
+      <div class="form form-add">
+        <input id="new" type="radio" name="add" value="Новость">
+        <label for="new">Новость</label><br>
+        <input id="vac" type="radio" name="add" value="Вакансию">
+        <label for="vac">Вакансию</label><br>
+        <button id="jsAddClose" class="btn btn__sign">ok</button>
+      </div>
+      <div class="social"><a href="#" class="social-icon social-icon__instagramm"></a><a href="#" class="social-icon social-icon__facebook"></a><a href="#" class="social-icon social-icon__vk"></a></div>
+    </div>
+    <div class="header-main-logo"><a href="index.html"><img src="img/logo.png" alt="logo" class="logo"></a></div>
+    <div class="header-main-col">
+      <div class="sign"><a href="#" id="jsSignOpen" class="sign-rel">вход</a>
+        <button class="btn btn__sign sign-btn">регистрация</button>
+      </div><a href="#tel" class="phone">8.800.775.21.51</a>
+      <div class="form form-registration">
+        <input type="text" name="email" placeholder="e-mail">
+        <input type="password" name="password" placeholder="пароль">
+        <input id="memo" type="radio" name="registration" value="Вакансию">
+        <label for="memo">Запомнить меня</label>
+        <button id="jsSignClose" class="btn btn__sign">войти</button><br>
+        <input id="signsocial" type="radio" name="registration" value="Вакансию">
+        <label for="signsocial">Войти с помощью</label>
+        <div class="social"><a href="#" class="social-icon social-icon__facebook__colored"></a><a href="#" class="social-icon social-icon__vk__colored"></a></div>
+      </div>
+    </div>
+  </div>
+  <ul class="header-nav">
+    <li class="header-nav-item"><a href="#">О проекте</a></li>
+    <li class="header-nav-item"><a href="#">Академия</a></li>
+    <li class="header-nav-item"><a href="#">Конкурсы</a></li>
+    <li class="header-nav-item"><a href="#">Партнеры</a></li>
+    <li class="header-nav-item"><a href="#">Сувениры</a></li>
+    <li class="header-nav-item"><a href="#">Новости</a></li>
+    <li class="header-nav-item"><a href="#">Контакты </a></li>
+  </ul>
+</header>
+<script src="vendors/vendors.js"></script>
+<script src="js/main.js"></script>
